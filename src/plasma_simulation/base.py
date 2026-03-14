@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
+
 class SimulationBase(metaclass=ABCMeta):
     """Abstract base class for simulations."""
 
@@ -52,7 +53,7 @@ class SimulationBase(metaclass=ABCMeta):
     def from_file(cls, file_path: str):
         """Deserialize a simulation configuration from a file."""
         pass
-    
+
     @abstractmethod
     def export(self, file_path: str):
         """Export a simulation configuration to a YAML or JSON file based on the file extension."""
