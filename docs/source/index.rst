@@ -1,4 +1,4 @@
-template-python Documentation
+plasma-simulation Documentation
 =============================
 
 Write the documentation of your python package here.

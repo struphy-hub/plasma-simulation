@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-Learn how to install and use `template-python`.
+Learn how to install and use `plasma-simulation`.
 
 .. toctree::
    :maxdepth: 1

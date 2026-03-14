@@ -1,5 +1,5 @@
 def test_import_app():
-    from app.main import main
+    from plasma_simulation.main import main
 
     print("app imported")
     main()

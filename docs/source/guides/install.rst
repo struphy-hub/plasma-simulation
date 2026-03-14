@@ -13,7 +13,7 @@ Install the code and requirements with pip::
 
 Run the code with::
 
-   template-python
+   plasma-simulation
 
 
 Build docs

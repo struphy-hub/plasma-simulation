@@ -13,15 +13,15 @@ fi
 APPNAME="$1"
 APPNAME_UNDERSCORE="${APPNAME//-/_}"
 
-# 1. Find and replace "template-python" with app name
-grep -rl "template-python" . --exclude-dir=.git --exclude-dir=docs/build | while IFS= read -r file; do
-  LC_ALL=C sed -i.bak "s/template-python/${APPNAME}/g" "$file"
+# 1. Find and replace "plasma-simulation" with app name
+grep -rl "plasma-simulation" . --exclude-dir=.git --exclude-dir=docs/build | while IFS= read -r file; do
+  LC_ALL=C sed -i.bak "s/plasma-simulation/${APPNAME}/g" "$file"
   rm -f "${file}.bak"
 done
 
-# Also replace template_python with appname_underscore
-grep -rl "template_python" . --exclude-dir=.git --exclude-dir=docs/build | while IFS= read -r file; do
-  LC_ALL=C sed -i.bak "s/template_python/${APPNAME_UNDERSCORE}/g" "$file"
+# Also replace plasma_simulation with appname_underscore
+grep -rl "plasma_simulation" . --exclude-dir=.git --exclude-dir=docs/build | while IFS= read -r file; do
+  LC_ALL=C sed -i.bak "s/plasma_simulation/${APPNAME_UNDERSCORE}/g" "$file"
   rm -f "${file}.bak"
 done
 
@@ -63,8 +63,8 @@ fi
 
 
 echo "Done:"
-echo "  Replaced 'template-python' → '${APPNAME}'"
-echo "  Replaced 'template_python' → '${APPNAME_UNDERSCORE}'"
+echo "  Replaced 'plasma-simulation' → '${APPNAME}'"
+echo "  Replaced 'plasma_simulation' → '${APPNAME_UNDERSCORE}'"
 echo "  Moved src/app → src/${APPNAME_UNDERSCORE}"
 echo "  Replaced import statements and entry points"
 echo "  Removed .github/workflows/test_setup_script.yml"

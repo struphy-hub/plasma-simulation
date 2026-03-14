@@ -10,4 +10,4 @@ Modules
    :toctree: _autosummary
    :recursive:
 
-   app
+   plasma_simulation
