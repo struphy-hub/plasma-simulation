@@ -1,8 +1,4 @@
-import json
 from abc import ABCMeta, abstractmethod
-
-from struphy.utils.utils import dict_to_yaml
-
 
 class SimulationBase(metaclass=ABCMeta):
     """Abstract base class for simulations."""
@@ -56,14 +52,8 @@ class SimulationBase(metaclass=ABCMeta):
     def from_file(cls, file_path: str):
         """Deserialize a simulation configuration from a file."""
         pass
-
+    
+    @abstractmethod
     def export(self, file_path: str):
         """Export a simulation configuration to a YAML or JSON file based on the file extension."""
-        dct = self.to_dict()
-        if file_path.endswith(".yaml") or file_path.endswith(".yml"):
-            dict_to_yaml(dct, file_path)
-        elif file_path.endswith(".json"):
-            with open(file_path, "w") as f:
-                json.dump(dct, f, indent=4)
-        else:
-            raise ValueError("Unsupported file format. Use .yaml, .yml or .json.")
+        pass
