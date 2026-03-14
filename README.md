@@ -1,8 +1,8 @@
-# template-python
+# plasma-simulation
 
 Template repository for python projects
 
-Documentation: https://max-models.github.io/template-python/
+Documentation: https://max-models.github.io/plasma-simulation/
 
 # Install
 
@@ -23,7 +23,7 @@ pip install -e .
 Run the code with
 
 ```
-template-python
+plasma-simulation
 ```
 
 # Build docs
@@ -50,9 +50,9 @@ This project is configured to automatically publish to PyPI using GitHub Actions
 1. Go to your PyPI project settings
 2. Navigate to "Publishing" → "Add a new publisher"
 3. Configure the trusted publisher with these details:
-   - **PyPI Project Name**: `template-python` (or your project name)
+   - **PyPI Project Name**: `plasma-simulation` (or your project name)
    - **Owner**: Your GitHub username/organization
-   - **Repository name**: `template-python`
+   - **Repository name**: `plasma-simulation`
    - **Workflow name**: `publish_pypi.yml`
    - **Environment name**: `pypi`
 
